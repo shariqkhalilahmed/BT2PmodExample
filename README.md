@@ -3,7 +3,7 @@ BT2 Pmod Example
 
 About
 -----
-The project aims to set an simple example of using the Digilent BT2 Pmod on a Digilent Nexys 4 Video Board. It has 
+The project aims to set a simple example of using the Digilent BT2 Pmod on a Digilent Nexys 4 Video Board. It also features ILA debugging and serial communication verification script. See documentation under 'docs' for more details. 
 
 Usage
 -----
