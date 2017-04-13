@@ -1,0 +1,192 @@
+01:34:56 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+01:34:58 INFO  : XSDB server has started successfully.
+01:34:59 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+01:36:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:36:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+01:36:52 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+01:37:33 INFO  : Processor reset is completed for microblaze_0
+01:41:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:41:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+01:41:47 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+01:45:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:45:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+01:45:17 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+01:47:10 INFO  : Processor reset is completed for microblaze_0
+01:57:06 INFO  : Processor reset is completed for microblaze_0
+01:57:50 INFO  : Processor reset is completed for microblaze_0
+01:58:12 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:58:15 INFO  : Processor reset is completed for microblaze_0
+01:58:39 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:58:41 INFO  : Processor reset is completed for microblaze_0
+02:08:25 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+03:14:38 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+03:14:42 INFO  : XSDB server has started successfully.
+03:14:44 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+03:14:44 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+04:04:05 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:701)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+04:04:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:04:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+04:04:41 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+04:04:49 INFO  : Processor reset is completed for microblaze_0
+04:07:45 INFO  : Processor reset is completed for microblaze_0
+04:51:01 INFO  : Processor reset is completed for microblaze_0
+06:06:23 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+06:07:26 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+06:07:30 INFO  : XSDB server has started successfully.
+06:07:31 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+06:07:31 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+06:07:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1488452795575,  Project:1488349276916
+06:07:31 INFO  : The hardware specification for project 'bt_design_wrapper_hw_platform_0' is different from C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+06:07:31 INFO  : Copied contents of C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf into \bt_design_wrapper_hw_platform_0\system.hdf.
+06:07:32 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+06:07:38 INFO  : 
+06:07:39 INFO  : Updating hardware inferred compiler options for bt_simple.
+06:07:39 INFO  : Clearing existing target manager status.
+06:08:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:08:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+06:08:14 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+06:08:36 INFO  : Processor reset is completed for microblaze_0
+06:08:58 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:09:00 INFO  : Processor reset is completed for microblaze_0
+06:17:48 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:36:06 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+14:36:11 INFO  : XSDB server has started successfully.
+14:36:12 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+14:36:12 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+14:37:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:37:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+14:37:59 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+15:41:35 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+15:41:40 INFO  : XSDB server has started successfully.
+15:41:41 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+15:41:41 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+15:41:44 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1488486858805,  Project:1488452795575
+15:41:44 INFO  : The hardware specification for project 'bt_design_wrapper_hw_platform_0' is different from C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+15:41:44 INFO  : Copied contents of C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf into \bt_design_wrapper_hw_platform_0\system.hdf.
+15:41:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:41:50 INFO  : 
+15:41:52 INFO  : Updating hardware inferred compiler options for bt_simple.
+15:41:53 INFO  : Clearing existing target manager status.
+15:42:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:42:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+15:42:37 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+15:44:43 INFO  : Processor reset is completed for microblaze_0
+17:34:23 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:745)
+17:34:23 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+17:47:45 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+17:47:53 INFO  : XSDB server has started successfully.
+17:47:57 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+17:47:57 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+17:51:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:51:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+17:51:54 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+17:52:10 INFO  : Processor reset is completed for microblaze_0
+18:24:43 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:24:49 INFO  : Processor reset is completed for microblaze_0
+18:26:21 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:26:24 INFO  : Processor reset is completed for microblaze_0
+18:26:33 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:26:36 INFO  : Processor reset is completed for microblaze_0
+18:26:46 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:26:48 INFO  : Processor reset is completed for microblaze_0
+00:13:42 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:32:48 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+13:32:55 INFO  : XSDB server has started successfully.
+13:33:01 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+13:33:01 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+13:34:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:34:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+13:34:54 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+13:35:36 INFO  : Processor reset is completed for microblaze_0
+13:36:11 INFO  : Processor reset is completed for microblaze_0
+14:20:36 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:20:38 INFO  : Processor reset is completed for microblaze_0
+14:32:18 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:33:48 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+18:33:57 INFO  : XSDB server has started successfully.
+18:34:02 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+18:34:02 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+18:34:07 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+18:34:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:34:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+18:34:58 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+18:35:06 INFO  : Processor reset is completed for microblaze_0
+18:45:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:45:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+18:45:10 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+18:51:39 INFO  : Processor reset is completed for microblaze_0
+19:22:30 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+19:22:32 INFO  : Processor reset is completed for microblaze_0
+21:37:54 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:02:17 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+14:02:21 INFO  : XSDB server has started successfully.
+14:02:22 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+14:02:22 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+14:06:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+14:06:40 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+14:13:47 INFO  : Processor reset is completed for microblaze_0
+14:22:29 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:07:27 INFO  : Launching XSDB server: xsdb.bat -interactive C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\temp_xsdb_launch_script.tcl
+11:07:30 INFO  : XSDB server has started successfully.
+11:07:33 INFO  : Processing command line option -hwspec C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+11:07:33 INFO  : Checking for hwspec changes in the project bt_design_wrapper_hw_platform_0.
+11:07:34 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1489676775583,  Project:1488486858805
+11:07:34 INFO  : The hardware specification for project 'bt_design_wrapper_hw_platform_0' is different from C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf.
+11:07:34 INFO  : Copied contents of C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper.hdf into \bt_design_wrapper_hw_platform_0\system.hdf.
+11:07:35 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:07:40 INFO  : 
+11:07:41 INFO  : Updating hardware inferred compiler options for bt_simple.
+11:07:41 INFO  : Clearing existing target manager status.
+11:10:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:10:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646022A" && level==0} -index 0' command is executed.
+11:10:50 INFO  : FPGA configured successfully with bitstream "C:/ece532/bt_test/bt_test_proj/bt_test_proj.sdk/bt_design_wrapper_hw_platform_0/download.bit"
+11:11:09 INFO  : Processor reset is completed for microblaze_0
+11:47:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

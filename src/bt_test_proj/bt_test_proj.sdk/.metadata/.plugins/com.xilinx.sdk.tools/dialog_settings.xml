@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="bt_design_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="" key="bt_design_wrapper_hw_platform_0-offSet"/>
+	<item value="false" key="bt_design_wrapper_hw_platform_0-blankCheck"/>
+	<item value="false" key="bt_design_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="" key="bt_design_wrapper_hw_platform_0-imgFile"/>
+	<item value="" key="bt_design_wrapper_hw_platform_0-fsblFile"/>
+	<item value="28f00am29ew-bpi-x16" key="bt_design_wrapper_hw_platform_0-flashType"/>
+	<item value="Local" key="bt_design_wrapper_hw_platform_0-target"/>
+	<item value="Auto Detect" key="bt_design_wrapper_hw_platform_0-device"/>
+</section>

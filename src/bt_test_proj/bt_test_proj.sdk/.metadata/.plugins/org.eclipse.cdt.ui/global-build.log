@@ -1,0 +1,880 @@
+01:35:50 **** Build of project bt_simple_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+01:35:58 **** Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7100	    336	   3252	  10688	   29c0	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:37:28 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+01:47:09 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+01:51:36 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:53:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c:53:22: error: 'BTOUT_BASEADDRESS' undeclared (first use in this function)
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+                      ^
+../src/helloworld.c:53:22: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:61:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+make: *** [src/helloworld.o] Error 1
+01:52:43 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:58:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:66:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7288	    336	   3248	  10872	   2a78	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:53:47 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:58:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:66:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7288	    336	   3248	  10872	   2a78	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:55:43 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:58:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:66:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:6: warning: implicit declaration of function 'print_BT' [-Wimplicit-function-declaration]
+      print_BT("Hello BT\n\r");
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple\Debug/../src/helloworld.c:80: undefined reference to `print_BT'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bt_simple.elf] Error 1
+01:55:45 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:58:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:66:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7312	    336	   3248	  10896	   2a90	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:56:49 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:64:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:72:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7404	    336	   3252	  10992	   2af0	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:56:53 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:64:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:72:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7404	    336	   3252	  10992	   2af0	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:57:04 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+01:57:44 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:64:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:72:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7404	    336	   3252	  10992	   2af0	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:57:49 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+01:58:08 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:64:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:72:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7404	    336	   3252	  10992	   2af0	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:58:11 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+01:58:30 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'outbyte_bt':
+../src/helloworld.c:64:3: warning: implicit declaration of function 'XUartLite_SendByte' [-Wimplicit-function-declaration]
+   XUartLite_SendByte(BTOUT_BASEADDRESS, c);
+   ^
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:72:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7404	    336	   3252	  10992	   2af0	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+01:58:38 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+04:02:50 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7404	    336	   3252	  10992	   2af0	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+04:03:59 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+04:04:47 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+04:07:37 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7396	    336	   3252	  10984	   2ae8	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+04:07:43 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+04:08:04 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7404	    336	   3252	  10992	   2af0	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+04:39:26 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:73:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7400	    336	   3248	  10984	   2ae8	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+04:49:59 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:73:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+04:50:14 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:73:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+04:51:00 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+05:19:48 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:73:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+06:08:34 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+06:08:45 **** Clean-only build of configuration Debug for project bt_simple ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  bt_simple.elf.size  bt_simple.elf
+' '
+06:08:46 **** Clean-only build of project bt_simple_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+06:08:46 **** Build of project bt_simple_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+06:08:54 **** Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:73:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+06:08:58 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+15:42:44 **** Clean-only build of configuration Debug for project bt_simple ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  bt_simple.elf.size  bt_simple.elf
+' '
+15:42:44 **** Clean-only build of project bt_simple_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+15:42:45 **** Build of project bt_simple_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+xuartlite.c: In function 'XUartLite_SendBuffer':
+xuartlite.c:548:1: internal compiler error: Segmentation fault
+ }
+ ^
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://gcc.gnu.org/bugs.html> for instructions.
+make[1]: *** [libs] Error 1
+make: *** [microblaze_0/libsrc/uartlite_v3_2/src/make.libs] Error 2
+make: Target `all' not remade because of errors.
+15:43:00 **** Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:73:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `outbyte_bt':
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple\Debug/../src/helloworld.c:65: undefined reference to `XUartLite_SendByte'
+./src/helloworld.o: In function `main':
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple\Debug/../src/helloworld.c:101: undefined reference to `XUartLite_SendByte'
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple\Debug/../src/helloworld.c:107: undefined reference to `XUartLite_SendByte'
+../../bt_simple_bsp/microblaze_0/lib\libxil.a(outbyte.o): In function `outbyte':
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple_bsp\microblaze_0\libsrc\standalone_v5_5\src/outbyte.c:14: undefined reference to `XUartLite_SendByte'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bt_simple.elf] Error 1
+15:44:16 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `outbyte_bt':
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple\Debug/../src/helloworld.c:65: undefined reference to `XUartLite_SendByte'
+./src/helloworld.o: In function `main':
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple\Debug/../src/helloworld.c:101: undefined reference to `XUartLite_SendByte'
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple\Debug/../src/helloworld.c:107: undefined reference to `XUartLite_SendByte'
+../../bt_simple_bsp/microblaze_0/lib\libxil.a(outbyte.o): In function `outbyte':
+C:\ece532\bt_test\bt_test_proj\bt_test_proj.sdk\bt_simple_bsp\microblaze_0\libsrc\standalone_v5_5\src/outbyte.c:14: undefined reference to `XUartLite_SendByte'
+collect2.exe: error: ld returned 1 exit status
+make: *** [bt_simple.elf] Error 1
+15:44:23 **** Clean-only build of configuration Debug for project bt_simple ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  bt_simple.elf.size  bt_simple.elf
+' '
+15:44:23 **** Clean-only build of project bt_simple_bsp ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+15:44:23 **** Build of project bt_simple_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+15:44:31 **** Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:73:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+15:44:41 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+17:52:05 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+18:23:03 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:74:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+18:24:26 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:74:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+18:24:38 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:74:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+18:24:43 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+18:26:16 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:74:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7572	    336	   3252	  11160	   2b98	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+18:26:20 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+18:26:32 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+18:26:45 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+13:35:30 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+13:36:00 **** Auto Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'print_bt':
+../src/helloworld.c:74:2: warning: value computed is not used [-Wunused-value]
+  *ptr++;
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: bt_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "bt_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_simple.elf  |tee "bt_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7516	    336	   3252	  11104	   2b60	bt_simple.elf
+'Finished building: bt_simple.elf.size'
+' '
+13:36:09 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+14:20:32 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+18:33:55 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+18:35:05 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+18:51:37 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+19:22:29 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+14:13:43 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+make: Nothing to be done for `all'.
+11:11:06 **** Incremental Build of configuration Debug for project bt_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../bt_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
